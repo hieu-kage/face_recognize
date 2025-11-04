@@ -23,7 +23,7 @@ function AdminDashboard() {
           users ( name, student_id )
         `)
         .order('created_at', { ascending: false })
-        .limit(50); // Giới hạn
+        .limit(50);
 
       if (error) throw error;
 
