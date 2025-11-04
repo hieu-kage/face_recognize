@@ -5,6 +5,7 @@ router = APIRouter()
 
 @router.get("/logs")
 async def get_attendance_logs():
+    print("hhhh")
     try:
         query = supabase_client.table('attendance_logs') \
                         .select('created_at, users(name, student_id)') \
