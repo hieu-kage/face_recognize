@@ -50,7 +50,6 @@ function AdminDashboard() {
 
       fetchLogs();
 
-
     };
 
 
@@ -96,7 +95,6 @@ function AdminDashboard() {
         <tbody>
           {logs && logs.map((log) => (
             <tr key={log.created_at} style={{ borderBottom: '1px solid #555' }}>
-              {/* Cấu trúc data giờ là: log.users.name */}
               <td style={{ padding: '8px' }}>{log.users ? log.users.name : 'N/A'}</td>
               <td style={{ padding: '8px' }}>{log.users ? log.users.student_id : 'N/A'}</td>
               <td style={{ padding: '8px' }}>

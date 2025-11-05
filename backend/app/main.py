@@ -5,7 +5,6 @@ from app.api import users, logs
 
 app = FastAPI(title="FaceID Attendance API")
 
-# Cấu hình CORS (như cũ)
 origins = [
     "http://localhost:5173",
     "http://localhost:3000",
